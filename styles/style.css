@@ -1,1 +1,63 @@
 /* CSS RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 270px;
+  outline: 1px solid red;
+  background: url("../assets/background.jpg") center center/cover;
+  padding-block: 20px;
+}
+
+header .budget-title {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+header .budget-amount {
+  text-align: center;
+  margin-block: 20px;
+  font-size: 2.8rem;
+  color: #ffffff;
+}
+
+header .budget-type-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+header .budget-type-container .budget-income-container,
+header .budget-type-container .budget-expense-container {
+  width: 400px;
+  padding: 15px 10px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .budget-type-container .budget-income-container {
+  background-color: #28b9b5;
+}
+
+header .budget-type-container .budget-expense-container {
+  background-color: #ff5049;
+}
+
+header .budget-type-container span {
+  color: #ffffff;
+}
+
+header .budget-type-container .budget-name {
+  color: #333;
+}
+
+header .budget-type-container .budget-expense-percent {
+  font-size: 0.6rem;
+  padding: 3px;
+}
